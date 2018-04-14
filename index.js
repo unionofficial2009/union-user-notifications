@@ -33,7 +33,6 @@ let args =  messageArray.slice(1);
   .setDescription("Attendance")
   .setColor("#15f153")
   .addField("Member Present", `${message.author}`)
-  .addField("", `${message.author.username}`)
   .addField("Time", message.createdAt)
   
   let attendancechannel = message.guild.channels.find(`name`, "dn-attendance");
