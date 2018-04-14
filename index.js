@@ -32,7 +32,7 @@ let args =  messageArray.slice(1);
   let attendanceEmbed = new Discord.RichEmbed()
   .setDescription("Attendance")
   .setColor("#15f153")
-  .addField("Member Present", `${message.author}`)
+  .addField("Member Present", `${message.author.id}`)
   .addField("Time", message.createdAt)
   
   let attendancechannel = message.guild.channels.find(`name`, "dn-attendance");
