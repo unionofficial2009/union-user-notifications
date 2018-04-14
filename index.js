@@ -24,7 +24,7 @@ let args =  messageArray.slice(1);
  if(cmd === `${prefix}present`){
    let dnmemberRole = message.guild.roles.find("name", "DN - Member");
    if(message.member.roles.has(dnmemberRole.id)) {
-   if(cooldown.has(message.author.user.username)){
+   if(cooldown.has(message.author)){
     message.delete();
   return message.reply("You have to wait 1 day.")
   }
@@ -32,7 +32,7 @@ let args =  messageArray.slice(1);
   let attendanceEmbed = new Discord.RichEmbed()
   .setDescription("Attendance")
   .setColor("#15f153")
-  .addField("Member Present", `${message.author.id}`)
+  .addField("Member Present", `${message.author.username}`)
   .addField("Time", message.createdAt)
   
   let attendancechannel = message.guild.channels.find(`name`, "dn-attendance");
