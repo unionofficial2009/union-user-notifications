@@ -22,9 +22,9 @@ let cmd = messageArray[0];
 let args =  messageArray.slice(1);
     
  if(cmd === `${prefix}present`){
-   let dnmemberRole = message.guild.roles.find("name", "DN - Member");
-   if(message.member.roles.has(dnmemberRole.id)) {
-   if(cooldown.has(message.author)){
+    let akmemberRole = message.guild.roles.find("name", "DN - Member");
+   if(message.member.roles.has(akmemberRole.id)) {
+   if(cooldown.has(message.author.id)){
     message.delete();
   return message.reply("You have to wait 1 day.")
   }
@@ -41,7 +41,7 @@ let args =  messageArray.slice(1);
   
   message.delete().catch(O_o=>{});
   attendancechannel.send(attendanceEmbed);
-   } else {
+      } else {
      message.reply("바보야, you don't have the permission to use this command.");
    }
    setTimeout(() => {
