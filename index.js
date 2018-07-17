@@ -6,7 +6,7 @@ let cdseconds = 86400;
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity("^present for Attendance", {type: "WATCHING"});
+  bot.user.setActivity("%present for Attendance", {type: "WATCHING"});
   
 });
 
@@ -22,7 +22,7 @@ let cmd = messageArray[0];
 let args =  messageArray.slice(1);
     
  if(cmd === `${prefix}present`){
-    let akmemberRole = message.guild.roles.find("name", "DN - Member");
+    let akmemberRole = message.guild.roles.find("name", "GC - Member");
    if(message.member.roles.has(akmemberRole.id)) {
    if(cooldown.has(message.author.id)){
     message.delete();
@@ -35,7 +35,7 @@ let args =  messageArray.slice(1);
   .addField("Member Present", `${message.author}`)
   .addField("Time", message.createdAt)
   
-  let attendancechannel = message.guild.channels.find(`name`, "dn-attendance");
+  let attendancechannel = message.guild.channels.find(`name`, "gc-attendance");
   if (!attendancechannel) return message.channel.send("Couldn't find attendance channel.");
   
   
