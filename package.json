@@ -1,7 +1,7 @@
 {
   "name": "bots",
   "version": "1.0.0",
-  "description": "Discord Bot for UNION guild (Aura Kingdom Mobile)",
+  "description": "Discord Bot for UNION guild (Discord User Status)",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
