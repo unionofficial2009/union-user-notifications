@@ -1,2 +1,2 @@
-# DN-Union
-DN Attendance
+#Union
+Discord User Status
