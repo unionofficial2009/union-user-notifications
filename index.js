@@ -13,7 +13,7 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
         
         userStatus.push(username, status);
         guildChannels.find('name', 'user-status')
-        .send(`<@${newMember.user.id}> is now ${newMember.user.presence.status}(invisible)`)
+        .send(`<@${newMember.user.id}> is now ${newMember.user.presence.status} (invisible)`)
         .then(msg => {
             // do something else if you want
         })
