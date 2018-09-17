@@ -11,7 +11,7 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
     
     
   let bicon = newMember.user.displayAvatarURL;
-  let botembed = new Discord.RichEmbed()
+  let botembed = new Discord.RichEmbed();
   let bicon2 = bot.user.displayAvatarURL;
   
   .setDescription(`<@${newMember.user.id}>`)
