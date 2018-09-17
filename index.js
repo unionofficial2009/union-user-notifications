@@ -9,7 +9,7 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
     // get a reference to all channels in the user's guild
     let guildChannels = newMember.guild.channels;
     
-    if(oldMember.presence.status == newMember.presence.status){
+    if(oldMember.presence.status == newMember.presence.status && newMember.presence.status = "offline"){
         
         userStatus.push(username, status);
         guildChannels.find('name', 'user-status')
