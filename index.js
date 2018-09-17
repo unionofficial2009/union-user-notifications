@@ -10,11 +10,19 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
     let guildChannels = newMember.guild.channels;
     
     
+  let bicon = newMember.user.displayAvatarURL;
+  let botembed = new Discord.RichEmbed()
+  .setDescription(`<@${newMember.user.id}>`)
+  .setColor("#15f153")
+  .setThumbnail(bicon)
+  .addField("Status", `${newMember.user.presence.status}`);
+    
+    
     if(oldMember.presence.status == newMember.presence.status && newMember.presence.status == "offline"){
         
         userStatus.push(username, status);
         guildChannels.find('name', 'user-status')
-        .send(`<@${newMember.user.id}> is now ${newMember.user.presence.status} (invisible)`)
+        .send(botembed)
         .then(msg => {
             // do something else if you want
         })
@@ -24,7 +32,7 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
   
     userStatus.push(username, status);
     guildChannels.find('name', 'user-status')
-        .send(`<@${newMember.user.id}> is now ${newMember.user.presence.status}`)
+        .send(`botembed`)
         .then(msg => {
             // do something else if you want
         })
