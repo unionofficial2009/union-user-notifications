@@ -8,6 +8,18 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
     let status = newMember.user.presence.status;
     // get a reference to all channels in the user's guild
     let guildChannels = newMember.guild.channels;
+    
+    if(oldMember.presence.status == newMember.presence.status){
+        
+        userStatus.push(username, status);
+        guildChannels.find('name', 'user-status')
+        .send(`<@${newMember.user.id}> is now ${newMember.user.presence.status}(invisible)`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+   
+    } else {
   
     userStatus.push(username, status);
     guildChannels.find('name', 'user-status')
@@ -16,6 +28,8 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
             // do something else if you want
         })
         .catch(console.error)
+        
+    }
 })
 
 
