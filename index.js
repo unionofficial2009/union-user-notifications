@@ -11,15 +11,15 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
     
     
   let bicon = newMember.user.displayAvatarURL;
-  let botembed = new Discord.RichEmbed();
-  let bicon2 = bot.user.displayAvatarURL;
+  let bicon2 = bot.user.displayAvatarURL;  
+  let botembed = new Discord.RichEmbed()
   
   .setDescription(`<@${newMember.user.id}>`)
   .setColor("#15f153")
   .setThumbnail(bicon)
   .addField("Status", `${newMember.user.presence.status}`)
   .setTimestamp()
-  .setFooter("Date",bicon2);
+  .setFooter("",bicon2);
     
     
     if(oldMember.presence.status == newMember.presence.status && newMember.presence.status == "offline"){
