@@ -32,7 +32,7 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
   
     userStatus.push(username, status);
     guildChannels.find('name', 'user-status')
-        .send(`botembed`)
+        .send(botembed)
         .then(msg => {
             // do something else if you want
         })
