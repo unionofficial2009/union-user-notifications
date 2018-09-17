@@ -6,6 +6,8 @@ let userStatus = [];
 bot.on("presenceUpdate", (oldMember, newMember) => {
     let username = newMember.user.username;
     let status = newMember.user.presence.status;
+    // get a reference to all channels in the user's guild
+    let guildChannels = newMember.guild.channels;
   
     userStatus.push(username, status);
     //console.log(`${newMember.user.username} is now ${newMember.user.presence.status}`);
