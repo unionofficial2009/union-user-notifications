@@ -10,8 +10,7 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
     let guildChannels = newMember.guild.channels;
   
     userStatus.push(username, status);
-    //console.log(`${newMember.user.username} is now ${newMember.user.presence.status}`);
-    guildChannels.find('name', 'general')
+    guildChannels.find('name', 'user-status')
         .send(`${newMember.user.username} is now ${newMember.user.presence.status}`)
         .then(msg => {
             // do something else if you want
