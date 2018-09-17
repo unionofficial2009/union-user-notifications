@@ -15,7 +15,8 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
   .setDescription(`<@${newMember.user.id}>`)
   .setColor("#15f153")
   .setThumbnail(bicon)
-  .addField("Status", `${newMember.user.presence.status}`);
+  .addField("Status", `${newMember.user.presence.status}`)
+  .setTimestamp();
     
     
     if(oldMember.presence.status == newMember.presence.status && newMember.presence.status == "offline"){
