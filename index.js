@@ -19,7 +19,7 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
   .setThumbnail(bicon)
   .addField("Status", `${newMember.user.presence.status}`)
   .setTimestamp()
-  .setFooter("Date/Time",bicon2);
+  .setFooter("",bicon2);
     
     
     if(oldMember.presence.status == newMember.presence.status && newMember.presence.status == "offline"){
