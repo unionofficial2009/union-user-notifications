@@ -37,6 +37,7 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
   
     let botembed = new Discord.RichEmbed()
     .setDescription(`<@${newMember.user.id}>`)
+    .addField("Username", `${newMember.user.username}`)
     .setColor("#15f153")
     .setThumbnail(bicon)
     .addField("Status", `${newMember.user.presence.status}`)
