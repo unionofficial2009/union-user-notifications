@@ -57,19 +57,7 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
         
     }
 });
-
-
-bot.on("guildMemberAvailable", (member) => {
-    // get a reference to all channels in the user's guild
-    let guildChannels = newMember.guild.channels;
-    guildChannels.find('name', 'user-status')
-        .send(`member.user.username`)
-        .then(msg => {
-            // do something else if you want
-        })
-        .catch(console.error)
-    
- });   
+  
 
 
 bot.login(process.env.BOT_TOKEN);
