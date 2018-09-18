@@ -17,16 +17,7 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
     
     if(oldMember.presence.status == newMember.presence.status && newMember.presence.status == "offline"){
         
-        newMember.on("disconnected", () => {
-            
-         guildChannels.find('name', 'user-status')
-        .send("`${newMember.user.username}` disconnected")
-        .then(msg => {
-            // do something else if you want
-        })
-        .catch(console.error)
-            
-        });
+       
         
         let botembed = new Discord.RichEmbed()
         .setDescription(`<@${newMember.user.id}>`)
