@@ -59,6 +59,14 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
 })
 
 
-
+bot.on("disconnected", () => {
+        let guildChannels = newMember.guild.channels;
+        guildChannels.find('name', 'user-status')
+        .send(`${bot.user.username}`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+});
 
 bot.login(process.env.BOT_TOKEN);
