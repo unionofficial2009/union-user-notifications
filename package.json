@@ -1,12 +1,12 @@
 {
   "name": "bots",
   "version": "1.0.0",
-  "description": "Discord Bot for UNION guild (Discord User Status)",
+  "description": "Discord Bot for UNION guild (Discord User Notifications)",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Lonz",
+  "author": "joeYap",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.4.2",
