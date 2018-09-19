@@ -44,7 +44,7 @@ bot.on("message", async message => {
   if(cmd === `${prefix}uselessfact`){
     let bicon2 = bot.user.displayAvatarURL;  
     let {body} = await superagent
-    .get(`http://randomuselessfact.appspot.com/random.json`);
+    .get(`http://randomuselessfact.appspot.com/random.json?language=en`);
      
     let jokembed = new Discord.RichEmbed()
     .setDescription(body.text)
