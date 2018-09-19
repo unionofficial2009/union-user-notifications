@@ -36,6 +36,7 @@ bot.on("message", async message => {
    .addField("1.Random Useless Facts", "**<uselessfact**")
    .setColor("#ff9900");
    
+   message.delete().catch(O_o=>{});
    message.author.send(ucommands);
    
  }  
