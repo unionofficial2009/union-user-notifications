@@ -31,7 +31,12 @@ bot.on("message", async message => {
   
  if(cmd === `${prefix}help`){
    
-   message.author.send("test");
+   let ucommands = new Discord.RichEmbed()
+   .setDescription("COMMAND LIST")
+   .addField("Random Useless Facts", "<uselessfact")
+   .setColor("#ff9900");
+   
+   message.author.send(ucommands);
    
  }  
    
