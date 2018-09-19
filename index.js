@@ -45,7 +45,7 @@ bot.on("message", async message => {
     .setColor("#ff9900");
      
     message.delete().catch(O_o=>{});
-    message.channel.send("test");
+    message.channel.send(body.text);
    
      
   }     
