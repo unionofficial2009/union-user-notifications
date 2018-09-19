@@ -35,15 +35,15 @@ bot.on("message", async message => {
    
  }  
    
-  if(cmd === `${prefix}joke`){
+  if(cmd === `${prefix}chuck`){
     
     let {body} = await superagent
-    .get(`https://geek-jokes.sameerkumar.website/api`);
+    .get(`https://api.chucknorris.io/jokes/random`);
      
     let jokembed = new Discord.RichEmbed()
     .setColor("#ff9900")
-    .setTitle("Hahahaha")
-    .setImage(body);
+    .setTitle(body.value)
+    .setImage(body.icon_url);
      
     message.delete().catch(O_o=>{});
     message.reply(jokembed);
