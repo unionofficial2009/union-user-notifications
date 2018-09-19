@@ -22,7 +22,7 @@ bot.on('guildMemberAdd', member => {
 });
   
 bot.on("message", async message => {
-  let bill = "http://belikebill.azurewebsites.net/billgen-API.php?default=1";
+  
   let prefix = botconfig.prefix;
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
@@ -103,19 +103,7 @@ bot.on("message", async message => {
     
   } 
   
-  if(cmd === `${prefix}belikebill`){
-    
-    
-     
-    let jokembed = new Discord.RichEmbed()
-    .setColor("#ff9900")
-    .setTitle("Be Like Bill")
-    .setImage(bill);
-     
-    message.delete().catch(O_o=>{});
-    message.channel.send(jokembed);
-    
-  }
+ 
    
 });   
 
