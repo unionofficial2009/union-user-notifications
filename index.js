@@ -15,6 +15,31 @@ bot.on('guildMemberAdd', member => {
    member.send(botembed);
 });
   
+bot.on("message", async message => {
+
+  let prefix = botconfig.prefix;
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args =  messageArray.slice(1); 
+   
+   
+  if(cmd === `${prefix}joke`){
+    
+    let {body} = await superagent
+    .get(`https://geek-jokes.sameerkumar.website/api`);
+     
+    let jokembed = new Discord.RichEmbed()
+    .setColor("#ff9900")
+    .setTitle("Hahahaha")
+    .setImage(body.file);
+     
+    message.delete().catch(O_o=>{});
+    message.reply(jokembed);
+     
+  }     
+   
+});   
+
 
 
 bot.login(process.env.BOT_TOKEN);
