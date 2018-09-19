@@ -30,7 +30,7 @@ bot.on("message", async message => {
    
   
  if(cmd === `${prefix}help`){
-   let bicon2 = bot.user.displayAvatarURL;  
+
    let ucommands = new Discord.RichEmbed()
    .setDescription("COMMAND LIST")
    .addField("1.Random Useless Facts", "**<uselessfact**")
@@ -42,7 +42,7 @@ bot.on("message", async message => {
  }  
    
   if(cmd === `${prefix}uselessfact`){
-    let bicon2 = bot.user.displayAvatarURL;  
+ 
     let {body} = await superagent
     .get(`http://randomuselessfact.appspot.com/random.json?language=en`);
      
@@ -54,7 +54,22 @@ bot.on("message", async message => {
     message.channel.send(jokembed);
    
      
-  }     
+  }  
+  
+  if(cmd === `${prefix}catfact`){
+
+    let {body} = await superagent
+    .get(`https://catfact.ninja/fact`);
+     
+    let jokembed = new Discord.RichEmbed()
+    .setDescription(body.fact)
+    .setColor("#ff9900");
+     
+    message.delete().catch(O_o=>{});
+    message.channel.send(jokembed);
+   
+     
+  } 
    
 });   
 
