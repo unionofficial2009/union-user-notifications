@@ -33,7 +33,7 @@ bot.on("message", async message => {
    
    let ucommands = new Discord.RichEmbed()
    .setDescription("COMMAND LIST")
-   .addField("Random Useless Facts", "<uselessfact")
+   .addField("1.Random Useless Facts", "**<uselessfact**")
    .setColor("#ff9900");
    
    message.author.send(ucommands);
