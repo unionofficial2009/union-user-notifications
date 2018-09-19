@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity("type +help for list of commands", {type: "WATCHING"});
+  bot.user.setActivity("type <help for list of commands", {type: "WATCHING"});
 });
 
 bot.on('guildMemberAdd', member => {
