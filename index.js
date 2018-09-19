@@ -34,6 +34,7 @@ bot.on("message", async message => {
    let ucommands = new Discord.RichEmbed()
    .setDescription("COMMAND LIST")
    .addField("1.Random Useless Facts", "**<uselessfact**")
+   .addField("2.Random Cat Facts", "**<catfact**")
    .setColor("#ff9900");
    
    message.delete().catch(O_o=>{});
