@@ -35,7 +35,7 @@ bot.on("message", async message => {
    .setDescription("COMMAND LIST")
    .addField("1.Random Useless Facts", "**<uselessfact**")
    .addField("2.Random Cat Facts", "**<catfact**")
-   .addField("3.Random Chuck Norris Joke", "**<chucknorris**")
+   .addField("3.Random Chuck Norris Jokes", "**<chucknorris**")
    .setColor("#ff9900");
    
    message.delete().catch(O_o=>{});
