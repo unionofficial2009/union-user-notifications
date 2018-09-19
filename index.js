@@ -35,6 +35,7 @@ bot.on("message", async message => {
    .setDescription("COMMAND LIST")
    .addField("1.Random Useless Facts", "**<uselessfact**")
    .addField("2.Random Cat Facts", "**<catfact**")
+   .addField("3.Random Chuck Norris Joke", "**<chucknorris**")
    .setColor("#ff9900");
    
    message.delete().catch(O_o=>{});
@@ -64,6 +65,21 @@ bot.on("message", async message => {
      
     let jokembed = new Discord.RichEmbed()
     .setDescription(body.fact)
+    .setColor("#ff9900");
+     
+    message.delete().catch(O_o=>{});
+    message.channel.send(jokembed);
+   
+     
+  } 
+  
+  if(cmd === `${prefix}chucknorris`){
+
+    let {body} = await superagent
+    .get(`https://api.chucknorris.io/jokes/random`);
+     
+    let jokembed = new Discord.RichEmbed()
+    .setDescription(body.value)
     .setColor("#ff9900");
      
     message.delete().catch(O_o=>{});
