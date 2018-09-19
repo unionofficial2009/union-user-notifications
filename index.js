@@ -35,7 +35,7 @@ bot.on("message", async message => {
    
  }  
    
-  if(cmd === `${prefix}chuck`){
+  if(cmd === `${prefix}uselessfact`){
     
     let {body} = await superagent
     .get(`http://randomuselessfact.appspot.com/random.json`);
