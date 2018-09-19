@@ -37,6 +37,7 @@ bot.on("message", async message => {
    .addField("2. Random Cat Facts", "**<catfact**")
    .addField("3. Random Chuck Norris Jokes", "**<chucknorris**")
    .addField("4. Random Trivia", "**<trivia**")
+   .addField("4. Command List", "**<help**")
    .setColor("#ff9900");
    
    message.delete().catch(O_o=>{});
