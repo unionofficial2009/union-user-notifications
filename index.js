@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
+const botconfig = require("./botconfig.json");
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
@@ -26,6 +27,12 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args =  messageArray.slice(1); 
    
+  
+ if(cmd === `${prefix}help`){
+   
+   message.author.send("test");
+   
+ }  
    
   if(cmd === `${prefix}joke`){
     
