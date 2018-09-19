@@ -38,15 +38,14 @@ bot.on("message", async message => {
   if(cmd === `${prefix}chuck`){
     
     let {body} = await superagent
-    .get(`https://api.chucknorris.io/jokes/random`);
+    .get(`http://randomuselessfact.appspot.com/random.json`);
      
     let jokembed = new Discord.RichEmbed()
-    .setColor("#ff9900")
-    .setTitle(body.value)
-    .setImage(body.icon_url);
+    .setDescription(body.text)
+    .setColor("#ff9900");
      
     message.delete().catch(O_o=>{});
-    message.reply(jokembed);
+    message.send(jokembed);
      
   }     
    
