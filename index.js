@@ -1,6 +1,10 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 
+bot.on("ready", async () => {
+  console.log(`${bot.user.username} is online!`);
+  bot.user.setActivity("type +help for list of commands", {type: "WATCHING"});
+});
 
 bot.on('guildMemberAdd', member => {
    let bicon2 = bot.user.displayAvatarURL;  
