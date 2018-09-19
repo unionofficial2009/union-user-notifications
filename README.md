@@ -1,2 +1,2 @@
 # Union
-Discord User Status
+Discord User Notifications
