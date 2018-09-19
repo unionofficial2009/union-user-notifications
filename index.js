@@ -102,6 +102,18 @@ bot.on("message", async message => {
     message.channel.send(jokembed);
     
   } 
+  
+  if(cmd === `${prefix}belikebill`){
+     
+    let jokembed = new Discord.RichEmbed()
+    .setColor("#ff9900")
+    .setTitle("Be Like Bill")
+    .setImage("http://belikebill.azurewebsites.net/billgen-API.php?default=1");
+     
+    message.delete().catch(O_o=>{});
+    message.channel.send(jokembed);
+    
+  }
    
 });   
 
