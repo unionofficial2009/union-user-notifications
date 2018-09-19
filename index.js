@@ -43,7 +43,7 @@ bot.on("message", async message => {
     let jokembed = new Discord.RichEmbed()
     .setColor("#ff9900")
     .setTitle("Hahahaha")
-    .setImage(body.file);
+    .setImage(body);
      
     message.delete().catch(O_o=>{});
     message.reply(jokembed);
