@@ -34,9 +34,7 @@ bot.on("message", async message => {
    let ucommands = new Discord.RichEmbed()
    .setDescription("COMMAND LIST")
    .addField("1.Random Useless Facts", "**<uselessfact**")
-   .setColor("#ff9900")
-   .setTimestamp()
-   .setFooter("UNION User Notifications",bicon2);
+   .setColor("#ff9900");
    
    message.delete().catch(O_o=>{});
    message.channel.send(ucommands);
@@ -50,12 +48,10 @@ bot.on("message", async message => {
      
     let jokembed = new Discord.RichEmbed()
     .setDescription(body.text)
-    .setColor("#ff9900")
-    .setTimestamp()
-    .setFooter("UNION User Notifications",bicon2);
+    .setColor("#ff9900");
      
     message.delete().catch(O_o=>{});
-    message.channel.send(body.text);
+    message.channel.send(jokembed);
    
      
   }     
