@@ -27,7 +27,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
   let newroles = newMember.roles;
   let oldroles = oldMember.roles;
   
-  let c = newroles.filter(item => !oldroles.some(other => item.id === other.id));
+  let diffroles = newroles.filter(item => !oldroles.some(other => item.id === other.id));
 
   //let difference = newMember.roles.filter(e=> !oldMember.roles.includes(e));
 
@@ -40,7 +40,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
   //let verifiedRole = difference.find("name", "Verified").size;
   
   //if(verifiedRole == 1){
-    newMember.send(`test`); 
+    newMember.send(`${diffroles.map(r=> `${r.name}`).join(", ")}`); 
   //} 
   
 });  
