@@ -81,7 +81,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
    
     newMember.send(botembed);
    
-  else if(newaddedrole=="AK - Player"){
+   } else if(newaddedrole=="AK - Player"){
     
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
