@@ -204,6 +204,17 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
     
+  } else if(newaddedrole=="DN - Member"){
+    
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'dn-headquarters')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Dragon Nest Headquarters** :tada::hugging: ! <@&431159847866597398> `)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
   }
 });  
 
