@@ -24,16 +24,16 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('guildMemberUpdate', (oldMember, newMember) => {
   
-  let newroles =newMember.roles;
-  let oldroles =oldMember.roles;
+  let newroles = newMember.roles;
+  let oldroles = oldMember.roles;
   
   let difference = newroles.filter(x => !oldroles.includes(x));
   
-  let verifiedRole = difference.find("name", "Verified").size;
+  //let verifiedRole = difference.find("name", "Verified").size;
   
-  if(verifiedRole == 1){
-    newMember.send("test"); 
-  } 
+  //if(verifiedRole == 1){
+    newMember.send(`#{difference}`); 
+  //} 
   
 });  
 
