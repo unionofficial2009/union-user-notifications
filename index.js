@@ -29,14 +29,14 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
   
   
 
-
+  let difference = newMember.roles.filter(e=> oldMember.roles.indexOf(e) < 0);
 
   //let difference = newroles.filter(x => x.name !oldroles.includes(x));
   
   //let verifiedRole = difference.find("name", "Verified").size;
   
   //if(verifiedRole == 1){
-   // newMember.send(`test`); 
+    newMember.send(`test`); 
   //} 
   
 });  
