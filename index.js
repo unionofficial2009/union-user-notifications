@@ -27,12 +27,24 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
   let newroles = newMember.roles;
   let oldroles = oldMember.roles;
   
+  
+  var completeList = newMember.roles;
+
+  var invalidList = oldMember.roles;
+
+// filter the items from the invalid list, out of the complete list
+var validList = completedList.filter((item) => {
+  return !invalidList.has(item);
+});
+
+ // get a Set of the distinct, valid items
+ var validItems = new Set(validList);
   //let difference = newroles.filter(x => !oldroles.includes(x));
   
   //let verifiedRole = difference.find("name", "Verified").size;
   
   //if(verifiedRole == 1){
-    newMember.send(`test}`); 
+    newMember.send(`test`); 
   //} 
   
 });  
