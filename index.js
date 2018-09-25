@@ -40,7 +40,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
   //let verifiedRole = difference.find("name", "Verified").size;
   
   //if(verifiedRole == 1){
-    newMember.send(`${diffroles.map(r=> `${r.name}`).join(", ")}`); 
+    //newMember.send(`${diffroles.map(r=> `${r.name}`).join(", ")}`); 
   //} 
   
 });  
