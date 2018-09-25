@@ -67,6 +67,16 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .setFooter("UNION User Notifications",bicon2);
    
     newMember.send(botembed); 
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'ro-visiting-area')
+     .send(`Hello maam/sir <@${newMember.user.id}> welcome to UNION RO Visiting Area. @RO - Leader @RO - Deputy  @RO - Elite  @UNION Officers @UNION Human Resources`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
+    
   }
 });  
 
