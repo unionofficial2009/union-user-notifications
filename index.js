@@ -27,7 +27,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
   let newroles = newMember.roles;
   let oldroles = oldMember.roles;
   
-  let difference = newroles.filter(x => !oldroles.includes(x));
+  //let difference = newroles.filter(x => !oldroles.includes(x));
   
   //let verifiedRole = difference.find("name", "Verified").size;
   
