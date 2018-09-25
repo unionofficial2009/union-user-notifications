@@ -215,6 +215,17 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
     
+  } else if(newaddedrole=="GC - Member"){
+    
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'gc-headquarters')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Grand Chase Headquarters** :tada::hugging: ! <@&453253510058868736> `)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
   }
 });  
 
