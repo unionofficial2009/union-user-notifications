@@ -182,6 +182,17 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .catch(console.error)
     
     
+  } else if(newaddedrole=="RO - Member"){
+    
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'ro-headquarters')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Ragnarok Headquarters** :tada::hugging: ! <@&489776631913906199> `)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
   }
 });  
 
