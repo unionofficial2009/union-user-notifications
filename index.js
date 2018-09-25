@@ -91,6 +91,28 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .catch(console.error)
     
     
+  } else if(newaddedrole=="GC - Visitor"){
+    
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to **#gc-visiting-area** channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@GC - Leader @GC - Deputy @GC - Elite @UNION Officers @UNION Human Resources** in the **#ro-visiting-area** channel.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President  @UNION Vice President @UNION Officers @UNION Human Resources**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed); 
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'gc-visiting-area')
+     .send(`Hey <@${newMember.user.id}>, Welcome to UNION Grand Chase Visiting Area :tada::hugging: ! <@&453252952094670858> <@&453253183855394816> <@&453253398402170880> <@&431159737162399754> <@&469013270557360129>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
+    
   }
 });  
 
