@@ -89,7 +89,6 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .addField("Instructions", "Please proceed to **#aura_kingdom** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#aura_kingdom** channel to access the channels for **Aura Kingdom**.")
         .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @AK - Leader @AK - Deputy @AK - Elite**.")
         .setColor("#15f153")
-        .setThumbnail(":AK:")
         .setTimestamp()
         .setFooter("UNION User Notifications",bicon2);
    
