@@ -47,7 +47,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#ragnarok** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#ragnarok** channel to access the channels for Ragnarok.")
+        .addField("Instructions", "Please proceed to **#ragnarok** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#ragnarok** channel to access the channels for **Ragnarok**.")
         .addField("Need Help?", "Any problem, please DM **@UNION President  @UNION Vice President @UNION Officers @UNION Human Resources**.")
         .setColor("#15f153")
         .setTimestamp()
@@ -60,7 +60,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#grand_chase** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#grand_chase** channel to access the channels for Grand Chase.")
+        .addField("Instructions", "Please proceed to **#grand_chase** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#grand_chase** channel to access the channels for **Grand Chase**.")
         .addField("Need Help?", "Any problem, please DM **@UNION President  @UNION Vice President @UNION Officers @UNION Human Resources**.")
         .setColor("#15f153")
         .setTimestamp()
@@ -84,7 +84,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     
      let guildChannels = newMember.guild.channels;
      guildChannels.find('name', 'ro-visiting-area')
-     .send(`Hey <@${newMember.user.id}>, Welcome to UNION Ragnarok Visiting Area :tada::hugging: ! <@&489768333479247883> <@&489772251437203456> <@&489775797347942415> <@&431159737162399754> <@&469013270557360129>`)
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Ragnarok Visiting Area** :tada::hugging: ! <@&489768333479247883> <@&489772251437203456> <@&489775797347942415> <@&431159737162399754> <@&469013270557360129>`)
         .then(msg => {
             // do something else if you want
         })
@@ -106,7 +106,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     
      let guildChannels = newMember.guild.channels;
      guildChannels.find('name', 'gc-visiting-area')
-     .send(`Hey <@${newMember.user.id}>, Welcome to UNION Grand Chase Visiting Area :tada::hugging: ! <@&453252952094670858> <@&453253183855394816> <@&453253398402170880> <@&431159737162399754> <@&469013270557360129>`)
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Grand Chase Visiting Area** :tada::hugging: ! <@&453252952094670858> <@&453253183855394816> <@&453253398402170880> <@&431159737162399754> <@&469013270557360129>`)
         .then(msg => {
             // do something else if you want
         })
