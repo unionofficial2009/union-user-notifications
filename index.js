@@ -70,7 +70,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     
      let guildChannels = newMember.guild.channels;
      guildChannels.find('name', 'ro-visiting-area')
-     .send(`Hello maam/sir <@${newMember.user.id}> welcome to UNION RO Visiting Area. @RO - Leader @RO - Deputy  @RO - Elite  @UNION Officers @UNION Human Resources`)
+     .send(`Hey <@${newMember.user.id}>, Welcome to UNION RO Visiting Area :tada::hugging: ! <@&489768333479247883> <@&489772251437203456> <@&489775797347942415> <@&431159737162399754> <@&469013270557360129>`)
         .then(msg => {
             // do something else if you want
         })
