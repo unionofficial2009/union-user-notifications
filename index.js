@@ -67,7 +67,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .setFooter("UNION User Notifications",bicon2);
    
     newMember.send(botembed); 
-  
+  }
 });  
 
   
