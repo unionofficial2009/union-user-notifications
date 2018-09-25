@@ -28,20 +28,6 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
   let oldroles = oldMember.roles;
   
   let diffroles = newroles.filter(item => !oldroles.some(other => item.id === other.id));
-
-  //let difference = newMember.roles.filter(e=> !oldMember.roles.includes(e));
-
-  //let difference = newMember.roles.filter(x => !oldMember.roles.includes(x));
-  
-  //let difference = newMember.roles.diff(oldMember.roles);
-  
-  //oldMember.roles.map(u=> `<@&${u.id}>`)
-  
-  //let verifiedRole = difference.find("name", "Verified").size;
-  
-  //if(verifiedRole == 1){
-    //newMember.send(`${diffroles.map(r=> `${r.name}`).join(", ")}`); 
-  //} 
   
   let newaddedrole = diffroles.map(r=> `${r.name}`);
   
@@ -49,14 +35,27 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
      let bicon2 = bot.user.displayAvatarURL;  
      let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#roles** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the rules/instructions in the **#roles** channel to access the channels for specific game.")
+        .addField("Instructions", "Please proceed to **#roles** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#roles** channel to access the channels for specific game.")
         .addField("Need Help?", "Any problem, please DM **@UNION President  @UNION Vice President @UNION Officers @UNION Human Resources**.")
         .setColor("#15f153")
         .setTimestamp()
         .setFooter("UNION User Notifications",bicon2);
    
    newMember.send(botembed);
-  }   
+  } else if(newaddedrole=="RO - Player"){
+    
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to **#ragnarok** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#ragnarok** channel to access the channels for ragnarok.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President  @UNION Vice President @UNION Officers @UNION Human Resources**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed);
+    
+  }  
   
 });  
 
