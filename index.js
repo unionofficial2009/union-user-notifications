@@ -66,15 +66,27 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .setTimestamp()
         .setFooter("UNION User Notifications",bicon2);
    
-    newMember.send(botembed);   
+    newMember.send(botembed); 
+   
+   } else if(newaddedrole=="DN - Player"){
     
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to **#dragon_nest** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#dragon_nest** channel to access the channels for **Dragon Nest**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President  @UNION Vice President @UNION Officers @UNION Human Resources**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed);
     
   } else if(newaddedrole=="RO - Visitor"){
     
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#ro-visiting-area** channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@RO - Leader @RO - Deputy  @RO - Elite  @UNION Officers @UNION Human Resources** in the **#ro-visiting-area**.")
+        .addField("Instructions", "Please proceed to **#ro-visiting-area** channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@RO - Leader @RO - Deputy  @RO - Elite  @UNION Officers @UNION Human Resources** in the **#ro-visiting-area** channel.")
         .addField("Need Help?", "Any problem, please DM **@UNION President  @UNION Vice President @UNION Officers @UNION Human Resources**.")
         .setColor("#15f153")
         .setTimestamp()
@@ -96,7 +108,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#gc-visiting-area** channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@GC - Leader @GC - Deputy @GC - Elite @UNION Officers @UNION Human Resources** in the **#ro-visiting-area**.")
+        .addField("Instructions", "Please proceed to **#gc-visiting-area** channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@GC - Leader @GC - Deputy @GC - Elite @UNION Officers @UNION Human Resources** in the **#ro-visiting-area** channel.")
         .addField("Need Help?", "Any problem, please DM **@UNION President  @UNION Vice President @UNION Officers @UNION Human Resources**.")
         .setColor("#15f153")
         .setTimestamp()
