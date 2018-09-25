@@ -193,6 +193,17 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
     
+  } else if(newaddedrole=="AK - Member"){
+    
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'ak-headquarters')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Aura Kingdom Headquarters** :tada::hugging: ! <@&431159809450967041> `)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
   }
 });  
 
