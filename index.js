@@ -31,7 +31,9 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
 
   //let difference = newMember.roles.filter(e=> !oldMember.roles.includes(e));
 
-  let difference = newMember.roles.filter(x => !oldMember.roles.includes(x));
+  //let difference = newMember.roles.filter(x => !oldMember.roles.includes(x));
+  
+  let difference = newMember.roles.diff(oldMember.roles);
   
   //oldMember.roles.map(u=> `<@&${u.id}>`)
   
