@@ -32,7 +32,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
   //let verifiedRole = difference.find("name", "Verified").size;
   
   //if(verifiedRole == 1){
-    newMember.send(`${difference.roles.array().toString()}`); 
+    newMember.send(`${difference.array().toString()}`); 
   //} 
   
 });  
