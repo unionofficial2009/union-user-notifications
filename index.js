@@ -92,8 +92,21 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .setTimestamp()
         .setFooter("UNION User Notifications",bicon2);
    
-    newMember.send(botembed);   
+    newMember.send(botembed); 
+  
+   } else if(newaddedrole=="TM - Player"){
     
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to **#talion** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#talion** channel to access the channels for **Talion**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @TM - Leader @TM - Deputy @TM - Elite**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed);   
+      
   } else if(newaddedrole=="RO - Visitor"){
     
     let bicon2 = bot.user.displayAvatarURL;  
