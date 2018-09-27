@@ -260,6 +260,17 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
     
+  } else if(newaddedrole=="TM - Member"){
+    
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'tm-headquarters')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Talion Headquarters** :tada::hugging: ! <@&494884671637946368> `)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
   }
 });  
 
