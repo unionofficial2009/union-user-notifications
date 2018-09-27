@@ -194,6 +194,27 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
     
+  } else if(newaddedrole=="TM - Visitor"){
+    
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to **#tm-visiting-area** channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@TM - Leader @TM - Deputy @TM - Elite @UNION Officers @UNION Human Resources** in the **#tm-visiting-area** channel.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @TM - Leader @TM - Deputy @TM - Elite**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed); 
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'tm-visiting-area')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Talion Visiting Area** :tada::hugging: ! <@&494874681258672129> <@&494881022224105493> <@&494883668498579466> <@&431159737162399754> <@&469013270557360129>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)  
+    
     
   } else if(newaddedrole=="RO - Member"){
     
