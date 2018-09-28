@@ -287,11 +287,7 @@ bot.on("message", async message => {
 
    let ucommands = new Discord.RichEmbed()
    .setDescription("COMMAND LIST")
-   .addField("1. Random Useless Facts", "**<uselessfact**")
-   .addField("2. Random Cat Facts", "**<catfact**")
-   .addField("3. Random Chuck Norris Jokes", "**<chucknorris**")
-   .addField("4. Random Trivia", "**<trivia**")
-   .addField("4. Command List", "**<help**")
+   .addField("1. Command List", "**<help**")
    .setColor("#ff9900");
    
    message.delete().catch(O_o=>{});
@@ -299,63 +295,8 @@ bot.on("message", async message => {
    
  }  
    
-  if(cmd === `${prefix}uselessfact`){
- 
-    let {body} = await superagent
-    .get(`http://randomuselessfact.appspot.com/random.json?language=en`);
-     
-    let jokembed = new Discord.RichEmbed()
-    .setDescription(body.text)
-    .setColor("#ff9900");
-     
-    message.delete().catch(O_o=>{});
-    message.channel.send(jokembed);
-   
-     
-  }  
   
-  if(cmd === `${prefix}catfact`){
-
-    let {body} = await superagent
-    .get(`https://catfact.ninja/fact`);
-     
-    let jokembed = new Discord.RichEmbed()
-    .setDescription(body.fact)
-    .setColor("#ff9900");
-     
-    message.delete().catch(O_o=>{});
-    message.channel.send(jokembed);
-   
-     
-  } 
   
-  if(cmd === `${prefix}chucknorris`){
-
-    let {body} = await superagent
-    .get(`https://api.chucknorris.io/jokes/random`);
-     
-    let jokembed = new Discord.RichEmbed()
-    .setDescription(body.value)
-    .setColor("#ff9900");
-     
-    message.delete().catch(O_o=>{});
-    message.channel.send(jokembed);
-    
-  } 
-  
-  if(cmd === `${prefix}trivia`){
-
-    let {body} = await superagent
-    .get(`http://numbersapi.com/random/trivia?json`);
-     
-    let jokembed = new Discord.RichEmbed()
-    .setDescription(body.text)
-    .setColor("#ff9900");
-     
-    message.delete().catch(O_o=>{});
-    message.channel.send(jokembed);
-    
-  } 
   
  
    
