@@ -249,7 +249,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
     
-  } else if(newaddedrole=="GC - Member"){
+  } else if(newaddedrole=="GC - Member 1.0"){
     
     
      let guildChannels = newMember.guild.channels;
@@ -259,6 +259,17 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
             // do something else if you want
         })
         .catch(console.error)
+    
+  } else if(newaddedrole=="GC - Member 2.0"){
+    
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'gc-headquarters-2')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Grand Chase Headquarters** :tada::hugging: ! <@&498010508696223746> `)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)   
     
   } else if(newaddedrole=="TM - Member"){
     
