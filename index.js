@@ -106,6 +106,19 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .setFooter("UNION User Notifications",bicon2);
    
     newMember.send(botembed);   
+     
+  } else if(newaddedrole=="RF - Player"){
+    
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to **#rage_fighters** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#rage_fighters** channel to access the channels for **Rage Fighters**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @RF - Leader @RF - Deputy @RF - Elite**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed);   
       
   } else if(newaddedrole=="RO - Visitor"){
     
@@ -215,6 +228,26 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)  
     
+  } else if(newaddedrole=="RF - Visitor"){
+    
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to **#rf-visiting-area** channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@RF - Leader @RF - Deputy @RF - Elite @UNION Officers @UNION Human Resources** in the **#rf-visiting-area**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @TM - Leader @TM - Deputy @TM - Elite**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed); 
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'rf-visiting-area')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Rage Fighters Visiting Area** :tada::hugging: ! <@&498884131690905600> <@&498886609115152385> <@&498887656613216256> <@&431159737162399754> <@&469013270557360129>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)   
     
   } else if(newaddedrole=="RO - Member"){
     
@@ -267,6 +300,17 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
      let guildChannels = newMember.guild.channels;
      guildChannels.find('name', 'tm-headquarters')
      .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Talion Headquarters** :tada::hugging: ! <@&494884671637946368> `)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
+  } else if(newaddedrole=="RF - Member"){
+    
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'rf-headquarters')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Rage Fighters Headquarters** :tada::hugging: ! <@&498889012598013952> `)
         .then(msg => {
             // do something else if you want
         })
