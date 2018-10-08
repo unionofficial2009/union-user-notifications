@@ -234,7 +234,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
         .addField("Instructions", "Please proceed to **#rf-visiting-area** channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@RF - Leader @RF - Deputy @RF - Elite @UNION Officers @UNION Human Resources** in the **#rf-visiting-area**.")
-        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @TM - Leader @TM - Deputy @TM - Elite**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @RF - Leader @RF - Deputy @RF - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
         .setFooter("UNION User Notifications",bicon2);
