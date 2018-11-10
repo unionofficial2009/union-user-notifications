@@ -253,6 +253,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     
     
      let guildChannels = newMember.guild.channels;
+    
      guildChannels.find('name', 'ro-headquarters')
      .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Ragnarok Headquarters** :tada::hugging: ! <@&489776631913906199> `)
         .then(msg => {
@@ -261,7 +262,14 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .catch(console.error)
     
      guildChannels.find('name', 'ro-headquarters')
-     .send(`<@${newMember.user.id}> pu your IGN here -> <#489805130422681610>`)
+     .send(`<@${newMember.user.id}> put your IGN here -> <#489805130422681610>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
+    guildChannels.find('name', 'ro-headquarters')
+     .send(`<@${newMember.user.id}> put your selfie here -> <#510330472119926785>`)
         .then(msg => {
             // do something else if you want
         })
