@@ -276,7 +276,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .catch(console.error)
  
     guildChannels.find('name', 'ro-headquarters')
-     .send(`<@${newMember.user.id}> Discord Attendance is a must type -> &present here once a day`)
+     .send(`<@${newMember.user.id}> Discord Attendance is a must, type &present here once a day`)
         .then(msg => {
             // do something else if you want
         })
