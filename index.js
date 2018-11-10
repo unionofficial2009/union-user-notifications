@@ -260,6 +260,13 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
     
+     guildChannels.find('name', 'ro-headquarters')
+     .send(`<@${newMember.user.id}>  Put your IGN at <#489805130422681610>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
   } else if(newaddedrole=="AK - Member"){
     
     
