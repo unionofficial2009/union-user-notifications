@@ -262,21 +262,21 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .catch(console.error)
     
      guildChannels.find('name', 'ro-headquarters')
-     .send(`<@${newMember.user.id}> put your IGN here -> <#489805130422681610>`)
+     .send(`<@${newMember.user.id}> put your IGN here :arrow_right: <#489805130422681610>`)
         .then(msg => {
             // do something else if you want
         })
         .catch(console.error)
     
     guildChannels.find('name', 'ro-headquarters')
-     .send(`<@${newMember.user.id}> put your selfie here -> <#510330472119926785>`)
+     .send(`<@${newMember.user.id}> put your selfie here :arrow_right: <#510330472119926785>`)
         .then(msg => {
             // do something else if you want
         })
         .catch(console.error)
  
     guildChannels.find('name', 'ro-headquarters')
-     .send(`<@${newMember.user.id}> Discord Attendance is a must, type **&present** here once a day`)
+     .send(`<@${newMember.user.id}> Discord Attendance is a must, type **&present** here :arrow_right: <#489790732681347073> once a day`)
         .then(msg => {
             // do something else if you want
         })
