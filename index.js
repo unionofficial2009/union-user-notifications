@@ -153,6 +153,27 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
     
+  } else if(newaddedrole=="ML - Visitor"){
+    
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to **#ml-visiting-area** channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@UNION Officers @UNION Human Resources** in the **#ml-visiting-area**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed); 
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'ml-visiting-area')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Mobile Legends Visiting Area** :tada::hugging: ! <@&431159737162399754> <@&469013270557360129>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)  
+    
     
   } else if(newaddedrole=="GC - Visitor"){
     
