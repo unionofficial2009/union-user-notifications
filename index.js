@@ -321,7 +321,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
      let guildChannels = newMember.guild.channels;
     
      guildChannels.find('name', 'ml-headquarters')
-     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Mobile Legends Headquarters** :tada::hugging: ! <@&514752550004588564> `)
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Mobile Legends Headquarters** :tada::hugging: ! <@&514453499283505152> `)
         .then(msg => {
             // do something else if you want
         })
