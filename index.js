@@ -314,7 +314,25 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
             // do something else if you want
         })
         .catch(console.error)
-
+ 
+  } else if(newaddedrole=="ML - Member"){
+    
+    
+     let guildChannels = newMember.guild.channels;
+    
+     guildChannels.find('name', 'ml-headquarters')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Mobile Legends Headquarters** :tada::hugging: ! <@&514457837372702721> `)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
+     guildChannels.find('name', 'ml-headquarters')
+     .send(`<@${newMember.user.id}> put your IGN here :arrow_right: <#514618492239216651>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
     
   } else if(newaddedrole=="AK - Member"){
     
