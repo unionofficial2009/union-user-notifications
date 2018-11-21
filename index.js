@@ -54,6 +54,18 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .setFooter("UNION User Notifications",bicon2);
    
     newMember.send(botembed);
+ } else if(newaddedrole=="ML - Player"){
+    
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to **#mobile_legends** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#mobile_legends** channel to access the channels for **Mobile Legends**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed);    
     
  } else if(newaddedrole=="GC - Player"){
     
