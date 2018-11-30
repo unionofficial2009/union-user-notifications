@@ -35,7 +35,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
      let bicon2 = bot.user.displayAvatarURL;  
      let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#roles** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#roles** channel to access the channels for specific game.")
+        .addField("Instructions", "Please proceed to <#431181931477204992> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#431181931477204992> channel to access the channels for specific game.")
         .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources**.")
         .setColor("#15f153")
         .setTimestamp()
