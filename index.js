@@ -47,7 +47,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#ragnarok** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#ragnarok** channel to access the channels for **Ragnarok**.")
+        .addField("Instructions", "Please proceed to <#489764277071380490> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#489764277071380490> channel to access the channels for **Ragnarok**.")
         .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @RO - Leader @RO - Deputy @RO - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
@@ -59,7 +59,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#mobile_legends** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#mobile_legends** channel to access the channels for **Mobile Legends**.")
+        .addField("Instructions", "Please proceed to <#514742775644815360> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#514742775644815360> channel to access the channels for **Mobile Legends**.")
         .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources**.")
         .setColor("#15f153")
         .setTimestamp()
@@ -72,7 +72,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#grand_chase** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#grand_chase** channel to access the channels for **Grand Chase**.")
+        .addField("Instructions", "Please proceed to <#453256128206340096> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#453256128206340096> channel to access the channels for **Grand Chase**.")
         .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @GC - Leader @GC - Deputy @GC - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
@@ -85,7 +85,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#dragon_nest** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#dragon_nest** channel to access the channels for **Dragon Nest**.")
+        .addField("Instructions", "Please proceed to <#431819678235492364> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#431819678235492364> channel to access the channels for **Dragon Nest**.")
         .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @DN - Leader @DN - Deputy @DN - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
@@ -98,7 +98,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#aura_kingdom** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#aura_kingdom** channel to access the channels for **Aura Kingdom**.")
+        .addField("Instructions", "Please proceed to <#431320651354210304> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#431320651354210304> channel to access the channels for **Aura Kingdom**.")
         .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @AK - Leader @AK - Deputy @AK - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
@@ -111,7 +111,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#talion** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#talion** channel to access the channels for **Talion**.")
+        .addField("Instructions", "Please proceed to <#494872674036613120> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#494872674036613120> channel to access the channels for **Talion**.")
         .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @TM - Leader @TM - Deputy @TM - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
@@ -124,7 +124,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to **#crown_four_kingdoms ** channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the **#crown_four_kingdoms ** channel to access the channels for **Crown Four Kingdoms**.")
+        .addField("Instructions", "Please proceed to <#498877377883930637> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#498877377883930637> channel to access the channels for **Crown Four Kingdoms**.")
         .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @CK - Leader @CK - Deputy @CK - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
