@@ -61,7 +61,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
         .addField("Instructions", "Please proceed to <#532167082347855882> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#532167082347855882> channel to access the channels for **Laplace M**.")
-        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @RO - Leader @RO - Deputy @RO - Elite**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @LM - Leader @LM - Deputy @LM - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
         .setFooter("UNION User Notifications",bicon2);
@@ -166,6 +166,27 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
             // do something else if you want
         })
         .catch(console.error)
+    
+  } else if(newaddedrole=="LM - Visitor"){
+    
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to <#532174960211263498> channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@LM - Leader @LM - Deputy  @LM - Elite @UNION Officers @UNION Human Resources** in the <#532174960211263498>.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @LM - Leader @LM - Deputy  @LM - Elite**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed); 
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'lm-visiting-area')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Laplace M Visiting Area** :tada::hugging: ! <@&532171866832371713> <@&532171016600944640> <@&532170233507741717> <@&431159737162399754> <@&469013270557360129>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)  
     
   } else if(newaddedrole=="ML - Visitor"){
     
@@ -343,6 +364,25 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     
      guildChannels.find('name', 'ml-headquarters')
      .send(`<@${newMember.user.id}> put your IGN here :arrow_right: <#514618492239216651>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+
+  } else if(newaddedrole=="LM - Member"){
+    
+    
+     let guildChannels = newMember.guild.channels;
+    
+     guildChannels.find('name', 'lm-headquarters')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Laplace M Headquarters** :tada::hugging: ! <@&532169564713254922> `)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
+     guildChannels.find('name', 'lm-headquarters')
+     .send(`<@${newMember.user.id}> put your IGN here :arrow_right: <#532178108250456064>`)
         .then(msg => {
             // do something else if you want
         })
