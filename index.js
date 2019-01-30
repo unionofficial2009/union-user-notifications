@@ -55,6 +55,19 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
    
     newMember.send(botembed);
     
+ } else if(newaddedrole=="SD - Player"){
+    
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to <#539698214182322176> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#539698214182322176> channel to access the channels for **Garena Speed Drifters**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @SD - Leader @SD - Deputy @SD - Elite**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed);   
+    
  } else if(newaddedrole=="LM - Player"){
     
     let bicon2 = bot.user.displayAvatarURL;  
@@ -166,6 +179,27 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
             // do something else if you want
         })
         .catch(console.error)
+  
+  } else if(newaddedrole=="SD - Visitor"){
+    
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to <#540011853783367690> channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@SD - Leader @SD - Deputy  @SD - Elite @UNION Officers @UNION Human Resources** in the <#540011853783367690>.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @SD - Leader @SD - Deputy  @SD - Elite**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed); 
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'sd-visiting-area')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Garena Speed Drifters Visiting Area** :tada::hugging: ! <@&540009827259121695> <@&540008748911951886> <@&540008015227518987> <@&431159737162399754> <@&469013270557360129>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)  
     
   } else if(newaddedrole=="LM - Visitor"){
     
