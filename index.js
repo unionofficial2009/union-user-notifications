@@ -81,12 +81,12 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
    
     newMember.send(botembed);   
     
- } else if(newaddedrole=="ML - Player"){
+ } else if(newaddedrole=="Mobile Legends"){
     
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to <#514742775644815360> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#514742775644815360> channel to access the channels for **Mobile Legends**.")
+        .addField("Instructions", "Please proceed to <#514742775644815360> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#514742775644815360> channel to access the channels for **MOBA & FPS**.")
         .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources**.")
         .setColor("#15f153")
         .setTimestamp()
@@ -222,7 +222,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)  
     
-  } else if(newaddedrole=="ML - Visitor"){
+  } else if(newaddedrole=="MF - Visitor"){
     
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
@@ -236,8 +236,8 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     newMember.send(botembed); 
     
      let guildChannels = newMember.guild.channels;
-     guildChannels.find('name', 'ml-visiting-area')
-     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Mobile Legends Visiting Area** :tada::hugging: ! <@&431159737162399754> <@&469013270557360129>`)
+     guildChannels.find('name', 'mf-visiting-area')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION MOBA & FPS Visiting Area** :tada::hugging: ! <@&431159737162399754> <@&469013270557360129>`)
         .then(msg => {
             // do something else if you want
         })
@@ -389,14 +389,14 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     
      let guildChannels = newMember.guild.channels;
     
-     guildChannels.find('name', 'ml-headquarters')
-     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Mobile Legends Headquarters** :tada::hugging: ! <@&514453499283505152> `)
+     guildChannels.find('name', 'mf-headquarters')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION MOBA & FPS Headquarters** :tada::hugging: ! <@&514453499283505152> `)
         .then(msg => {
             // do something else if you want
         })
         .catch(console.error)
     
-     guildChannels.find('name', 'ml-headquarters')
+     guildChannels.find('name', 'mf-headquarters')
      .send(`<@${newMember.user.id}> put your IGN here :arrow_right: <#514618492239216651>`)
         .then(msg => {
             // do something else if you want
