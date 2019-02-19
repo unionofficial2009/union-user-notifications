@@ -81,7 +81,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
    
     newMember.send(botembed);   
     
- } else if(newaddedrole=="Mobile Legends"){
+ } else if(newaddedrole=="MF - Player"){
     
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
