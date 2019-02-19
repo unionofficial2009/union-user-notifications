@@ -423,6 +423,13 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .catch(console.error)
     
     guildChannels.find('name', 'lm-headquarters')
+     .send(`<@${newMember.user.id}> put your selfie here :arrow_right: <#546665178079690752>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
+    guildChannels.find('name', 'lm-headquarters')
      .send(`<@${newMember.user.id}> Discord Attendance is a must, type ***present** here :arrow_right: <#532176620526632960> once a day`)
         .then(msg => {
             // do something else if you want
