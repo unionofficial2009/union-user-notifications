@@ -384,7 +384,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
  
-  } else if(newaddedrole=="ML - Member"){
+  } else if(newaddedrole=="MF - Member"){
     
     
      let guildChannels = newMember.guild.channels;
