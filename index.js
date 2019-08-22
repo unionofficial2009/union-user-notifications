@@ -87,7 +87,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
         .addField("Instructions", "Please proceed to <#498078972932784138> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#498078972932784138> channel to access the channels for **Laplace M**.")
-        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @LS - Leader @LS - Deputy @LS - Elite**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @UNION Resident @LS - Leader @LS - Deputy @LS - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
         .setFooter("UNION User Notifications",bicon2);
@@ -219,8 +219,8 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to <#ls-visiting-area> channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@LS - Leader @LS - Deputy  @LS - Elite @UNION Officers @UNION Human Resources** in the <#608172592934813724>.")
-        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @LS - Leader @LS - Deputy  @LS - Elite**.")
+        .addField("Instructions", "Please proceed to <#ls-visiting-area> channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@LS - Leader @LS - Deputy  @LS - Elite @UNION Officers @UNION Human Resources @UNION Resident** in the <#608172592934813724>.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @UNION Resident @LS - Leader @LS - Deputy  @LS - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
         .setFooter("UNION User Notifications",bicon2);
@@ -229,7 +229,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     
      let guildChannels = newMember.guild.channels;
      guildChannels.find('name', 'ls-visiting-area')
-     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Lumia Saga Visiting Area** :tada::hugging: ! <@&498086990705852472> <@&498087805155803137> <@&498089032031404032> <@&431159737162399754> <@&469013270557360129>`)
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Lumia Saga Visiting Area** :tada::hugging: ! <@&498086990705852472> <@&498087805155803137> <@&498089032031404032> <@&431159737162399754> <@&469013270557360129> <@&613595232486817792>`)
         .then(msg => {
             // do something else if you want
         })
