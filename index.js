@@ -219,7 +219,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to <#ls-visiting-area> channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@LS - Leader @LS - Deputy  @LS - Elite @UNION Officers @UNION Human Resources @UNION Resident** in the <#608172592934813724>.")
+        .addField("Instructions", "Please proceed to <#498095783392837632> channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@LS - Leader @LS - Deputy  @LS - Elite @UNION Officers @UNION Human Resources @UNION Resident** in the <#498095783392837632>.")
         .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @UNION Resident @LS - Leader @LS - Deputy  @LS - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
