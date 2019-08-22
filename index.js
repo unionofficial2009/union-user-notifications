@@ -80,6 +80,19 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .setFooter("UNION User Notifications",bicon2);
    
     newMember.send(botembed);   
+   
+  } else if(newaddedrole=="LS - Player"){
+    
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to <#498078972932784138> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#498078972932784138> channel to access the channels for **Laplace M**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @LS - Leader @LS - Deputy @LS - Elite**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed);  
     
  } else if(newaddedrole=="MF - Player"){
     
@@ -200,6 +213,27 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
             // do something else if you want
         })
         .catch(console.error)  
+    
+   } else if(newaddedrole=="LS - Visitor"){
+    
+    let bicon2 = bot.user.displayAvatarURL;  
+    let botembed = new Discord.RichEmbed()
+        .setDescription("Hello maam/sir welcome to UNION.")
+        .addField("Instructions", "Please proceed to <#608172592934813724> channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@LS - Leader @LS - Deputy  @LS - Elite @UNION Officers @UNION Human Resources** in the <#608172592934813724>.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @LS - Leader @LS - Deputy  @LS - Elite**.")
+        .setColor("#15f153")
+        .setTimestamp()
+        .setFooter("UNION User Notifications",bicon2);
+   
+    newMember.send(botembed); 
+    
+     let guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'ls-visiting-area')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Lumia Saga Visiting Area** :tada::hugging: ! <@&498086990705852472> <@&498087805155803137> <@&498089032031404032> <@&431159737162399754> <@&469013270557360129>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)    
     
   } else if(newaddedrole=="LM - Visitor"){
     
@@ -435,6 +469,32 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
             // do something else if you want
         })
         .catch(console.error)
+    
+    } else if(newaddedrole=="LS - Member"){
+    
+    
+     let guildChannels = newMember.guild.channels;
+    
+     guildChannels.find('name', 'ls-headquarters')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Lumia Saga Headquarters** :tada::hugging: ! <@&498089922419490816> `)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
+     guildChannels.find('name', 'ls-headquarters')
+     .send(`<@${newMember.user.id}> put your IGN here :arrow_right: <#498113047748149258>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)
+    
+    guildChannels.find('name', 'ls-headquarters')
+     .send(`<@${newMember.user.id}> Discord Attendance is a must, type **!present** here :arrow_right: <#498106235485421578> once a day`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)  
     
   } else if(newaddedrole=="SD - Member"){
     
