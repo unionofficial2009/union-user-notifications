@@ -17,6 +17,7 @@ bot.on("ready", async () => {
 //        .setColor("#15f153")
 //        .setTimestamp()
 //        .setFooter("UNION User Notifications",bicon2);
+//
 //   
 //   member.send(botembed);
 //});
