@@ -501,11 +501,11 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
     
-  } else if(newaddedrole=="UNION Community"){
+  } else if(oldaddedrole=="UNION Community"){
     
     
      let guildChannels = newMember.guild.channels;
-     guildChannels.find('name', 'union-community')
+     guildChannels.find('name', 'union-community-hq')
      .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Community Headquarters** :tada::hugging: ! <@&628829844418985994> `)
         .then(msg => {
             // do something else if you want
