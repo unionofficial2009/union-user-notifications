@@ -199,8 +199,8 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to <#540011853783367690> channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@SD - Leader @SD - Deputy  @SD - Elite @UNION Officers @UNION Human Resources** in the <#540011853783367690>.")
-        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @SD - Leader @SD - Deputy  @SD - Elite**.")
+        .addField("Instructions", "Please proceed to <#628829844418985994> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#628829844418985994> channel to access the channels for **UNION Community**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources**.")
         .setColor("#15f153")
         .setTimestamp()
         .setFooter("UNION User Notifications",bicon2);
@@ -208,13 +208,28 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     newMember.send(botembed); 
     
      let guildChannels = newMember.guild.channels;
-     guildChannels.find('name', 'sd-visiting-area')
-     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Garena Speed Drifters Visiting Area** :tada::hugging: ! <@&540009827259121695> <@&540008748911951886> <@&540008015227518987> <@&431159737162399754> <@&469013270557360129>`)
+     guildChannels.find('name', 'union-community-hq')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Community Headquarters** :tada::hugging: ! <@&515069461837905925>`)
         .then(msg => {
             // do something else if you want
         })
         .catch(console.error)  
     
+    guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'union-community-hq')
+     .send(`Hey <@${newMember.user.id}>, Select your Role Games here :arrow_right: ! <@&628982549447704596>`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)      
+    
+    guildChannels = newMember.guild.channels;
+     guildChannels.find('name', 'union-community-hq')
+     .send(`Hey <@${newMember.user.id}>, ***Happy Gaming!**)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)  
    } else if(newaddedrole=="LS - Visitor"){
     
     let bicon2 = bot.user.displayAvatarURL;  
@@ -496,18 +511,6 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
             // do something else if you want
         })
         .catch(console.error)  
-    
-  } else if(newaddedrole=="UNION Community"){
-    
-    
-     let guildChannels = newMember.guild.channels;
-    
-     guildChannels.find('name', 'union-community-hq')
-     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Community Headquarters** :tada::hugging: ! <@&515069461837905925> `)
-        .then(msg => {
-            // do something else if you want
-        })
-        .catch(console.error)
     
   } else if(newaddedrole=="AK - Member"){
     
