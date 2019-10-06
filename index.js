@@ -68,31 +68,6 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         .setFooter("UNION User Notifications",bicon2);
    
     newMember.send(botembed);   
-   
-        let guildChannels = newMember.guild.channels;
-   
-     guildChannels.find('name', 'union-community-hq')
-     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Community Headquarters** :tada::hugging: ! <@&515069461837905925>`)
-        .then(msg => {
-            // do something else if you want
-        })
-        .catch(console.error)  
-    
-    guildChannels = newMember.guild.channels;
-     guildChannels.find('name', 'union-community-hq')
-     .send(`Hey <@${newMember.user.id}>, Select your Role Games here :arrow_right: ! <@&628982549447704596>`)
-        .then(msg => {
-            // do something else if you want
-        })
-        .catch(console.error)      
-    
-    guildChannels = newMember.guild.channels;
-     guildChannels.find('name', 'union-community-hq')
-     .send(`Hey <@${newMember.user.id}>, ***Happy Gaming!**)
-        .then(msg => {
-            // do something else if you want
-        })
-        .catch(console.error)  
     
  } else if(newaddedrole=="LM - Player"){
     
