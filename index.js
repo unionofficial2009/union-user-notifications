@@ -505,7 +505,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     
     
      let guildChannels = newMember.guild.channels;
-     guildChannels.find('name', 'union-community-hq')
+     guildChannels.find('name', 'union-community')
      .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Community Headquarters** :tada::hugging: ! <@&628829844418985994> `)
         .then(msg => {
             // do something else if you want
