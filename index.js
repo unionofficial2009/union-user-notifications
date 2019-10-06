@@ -501,7 +501,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
     
-  } else if(oldaddedrole=="UNION Community"){
+  } else if(newaddedrole=="UNION Community"){
     
     
      let guildChannels = newMember.guild.channels;
