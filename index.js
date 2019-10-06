@@ -56,13 +56,13 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
    
     newMember.send(botembed);
     
- } else if(newaddedrole=="SD - Player"){
+ } else if(newaddedrole=="UNION Community"){
     
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to <#539698214182322176> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#539698214182322176> channel to access the channels for **Garena Speed Drifters**.")
-        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @SD - Leader @SD - Deputy @SD - Elite**.")
+        .addField("Instructions", "Please proceed to <#628829844418985994> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#628829844418985994> channel to access the channels for **UNION Community**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources**.")
         .setColor("#15f153")
         .setTimestamp()
         .setFooter("UNION User Notifications",bicon2);
@@ -497,31 +497,17 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)  
     
-  } else if(newaddedrole=="SD - Member"){
+  } else if(newaddedrole=="UNION Community"){
     
     
      let guildChannels = newMember.guild.channels;
     
-     guildChannels.find('name', 'sd-headquarters')
-     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Garena Speed Drifters Headquarters** :tada::hugging: ! <@&540007495117176855> `)
+     guildChannels.find('name', 'union-community-hq')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Community Headquarters** :tada::hugging: ! <@&515069461837905925> `)
         .then(msg => {
             // do something else if you want
         })
         .catch(console.error)
-    
-     guildChannels.find('name', 'sd-headquarters')
-     .send(`<@${newMember.user.id}> put your IGN here :arrow_right: <#540083385419169792>`)
-        .then(msg => {
-            // do something else if you want
-        })
-        .catch(console.error)
-    
-    guildChannels.find('name', 'sd-headquarters')
-     .send(`<@${newMember.user.id}> Discord Attendance is a must, type **>present** here :arrow_right: <#540017296999972864> once a day`)
-        .then(msg => {
-            // do something else if you want
-        })
-        .catch(console.error)  
     
   } else if(newaddedrole=="AK - Member"){
     
