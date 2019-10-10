@@ -95,13 +95,13 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
    
     newMember.send(botembed);  
     
- } else if(newaddedrole=="MF - Player"){
+ } else if(newaddedrole=="Mabinogi - Player"){
     
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to <#514742775644815360> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#514742775644815360> channel to access the channels for **MOBA & FPS**.")
-        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources**.")
+        .addField("Instructions", "Please proceed to <#631142968224645154> channel in the **UNION HEADQUATERS** discord server. Kindly read and follow the instructions in the <#631142968224645154> channel to access the channels for **Mabinogi Fantasy Life**.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @Mabinogi - Leader @Mabinogi - Deputy @Mabinogi - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
         .setFooter("UNION User Notifications",bicon2);
@@ -250,13 +250,13 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)  
     
-  } else if(newaddedrole=="MF - Visitor"){
+  } else if(newaddedrole=="Mabinogi - Visitor"){
     
     let bicon2 = bot.user.displayAvatarURL;  
     let botembed = new Discord.RichEmbed()
         .setDescription("Hello maam/sir welcome to UNION.")
-        .addField("Instructions", "Please proceed to <#514747051200741377> channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@UNION Officers @UNION Human Resources** in the <#514747051200741377>.")
-        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources**.")
+        .addField("Instructions", "Please proceed to <#498094166857744401> channel in the **UNION HEADQUATERS** discord server. Kindly tag the following : **@UNION Officers @UNION Human Resources** in the <#498094166857744401>.")
+        .addField("Need Help?", "Any problem, please DM **@UNION President @UNION Vice President @UNION Officers @UNION Human Resources @Mabinogi - Leader @Mabinogi - Deputy @Mabinogi - Elite**.")
         .setColor("#15f153")
         .setTimestamp()
         .setFooter("UNION User Notifications",bicon2);
@@ -264,8 +264,8 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
     newMember.send(botembed); 
     
      let guildChannels = newMember.guild.channels;
-     guildChannels.find('name', 'mf-visiting-area')
-     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION MOBA & FPS Visiting Area** :tada::hugging: ! <@&431159737162399754> <@&469013270557360129>`)
+     guildChannels.find('name', 'mabinogi-visiting-area')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Mabinogi Visiting Area** :tada::hugging: ! <@&498082738453217281> <@&498083384090951680> <@&498084035017310208> <@&431159737162399754> <@&469013270557360129>`)
         .then(msg => {
             // do something else if you want
         })
@@ -412,20 +412,20 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
  
-  } else if(newaddedrole=="MF - Member"){
+  } else if(newaddedrole=="Mabinogi - Member"){
     
     
      let guildChannels = newMember.guild.channels;
     
-     guildChannels.find('name', 'mf-headquarters')
-     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION MOBA & FPS Headquarters** :tada::hugging: ! <@&514453499283505152> `)
+     guildChannels.find('name', 'mabinogi-headquarters')
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Mabinogi Fantasy Life Headquarters** :tada::hugging: ! <@&498085236865761280> `)
         .then(msg => {
             // do something else if you want
         })
         .catch(console.error)
     
-     guildChannels.find('name', 'mf-headquarters')
-     .send(`<@${newMember.user.id}> put your IGN here :arrow_right: <#514618492239216651>`)
+     guildChannels.find('name', 'mabinogi-headquarters')
+     .send(`<@${newMember.user.id}> put your IGN here :arrow_right: <#498099198856658944>`)
         .then(msg => {
             // do something else if you want
         })
