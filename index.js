@@ -418,7 +418,7 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
      let guildChannels = newMember.guild.channels;
     
      guildChannels.find('name', 'mabinogi-headquarters')
-     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Mabinogi Fantasy Life Headquarters** :tada::hugging: ! <@&498085236865761280> `)
+     .send(`Hey <@${newMember.user.id}>, Welcome to **UNION Mabinogi Headquarters** :tada::hugging: ! <@&498085236865761280> `)
         .then(msg => {
             // do something else if you want
         })
