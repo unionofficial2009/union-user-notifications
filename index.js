@@ -431,6 +431,13 @@ bot.on('guildMemberUpdate', (oldMember, newMember) => {
         })
         .catch(console.error)
 
+    guildChannels.find('name', 'mabinogi-headquarters')
+     .send(`<@${newMember.user.id}> Discord Attendance is a must, type **%present** here :arrow_right: <#498097560242749440> once a day`)
+        .then(msg => {
+            // do something else if you want
+        })
+        .catch(console.error)    
+    
   } else if(newaddedrole=="LM - Member"){
     
     
